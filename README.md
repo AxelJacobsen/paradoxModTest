@@ -1,10 +1,7 @@
 # paradoxModTest
 A Repo for test mods to learn about paradox's systems
-<br>
 ## Progress:
-<br>
 ### Done:
--
 ### In Progress:
 Eu4 - Bone Breaker (Test Mod)
 
