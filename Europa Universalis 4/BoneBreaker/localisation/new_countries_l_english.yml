@@ -1,0 +1,11 @@
+﻿l_english:
+ BBR:0 "Bone Breaker"
+ BBR_ADJ:0 "Breaker"
+ po_break_bones:0 "Break their bones"
+ po_break_bones_desc:0 "Break the bones of your enemies"
+ break_bones:0 "Break their bones"
+ break_some_bones_title:0 "Break some bones"
+ break_some_bones_desc:0 "Break the bones of your rivals"
+ break_all_bones:0 "All their bones broken..."
+ CB_ALLOWED_po_break_bones:0 "Bone breaking"
+ PEACE_po_break_bones:0 "Crackalacka"

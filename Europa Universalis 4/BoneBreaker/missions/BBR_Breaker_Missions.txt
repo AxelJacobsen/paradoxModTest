@@ -1,0 +1,88 @@
+
+#Below are mission series, within them are the actual missions.
+bone_missions = {
+	slot = 2
+	
+	generic = no
+	
+	potential = {
+	   	NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = BBR
+		}
+	}
+	
+	break_some_bones = {
+    	id = break_some_bones
+    	effect = {
+		if = {
+			limit = {
+				tag = BBR
+			}
+		}
+    	}
+  	trigger = {
+        	limit = {
+            		NOR = {
+                		has_country_modifier = hidden_broken_bones
+                		count_rivals = {
+                    			has_country_modifier = hidden_broken_bones
+                		}
+            		}
+        	}
+        	OR = {
+            		limit = {
+                		count_rivals = {
+                    			value = 0
+                		}
+                		has_no_heir = yes
+            		}
+            		AND = {
+                		limit = {
+                    			count_rivals = {
+                        			value = 0
+                    			}
+                    			count = {
+                        			development = {
+                            				greater_than = PREV
+                        			}
+                    			}
+                		}
+                		limit = {
+                    			has_no_rivals = yes
+                    			has_no_heir = no
+                		}
+            		}
+        	}
+
+	}
+
+	break_all_bones = {
+		id = break_all_bones
+		generic = yes
+		required_missions = { break_some bones}
+		trigger = {
+        		limit = {
+				tag = BBR
+            			OR = {
+                			count = {
+                    				has_country_modifier = hidden_broken_bones
+                			}
+                			
+            			}
+        		}
+    		}
+		effect = {
+        		every_owned_province = {
+            			limit = {
+                			NOT = { is_colonizable = yes }
+            			}
+            		create_custom_country = {
+                		name = ROOT
+            		}
+        	}
+    	}
+}
+bone_two = {slot = 1}
+bone_three = {slot = 3}
+bone_four = {slot = 4}

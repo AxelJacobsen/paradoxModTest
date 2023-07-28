@@ -1,0 +1,23 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+mercantilism = 10
+technology_group = muslim
+religion = coptic
+primary_culture = tunisian
+capital = 2448 # SAHARA Mf DESERT
+fixed_capital = 2448 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+	monarch = {
+		name = "Bone"
+		adm = 0
+		dip = 0
+		mil = 0
+		dynasty = "Breaker"
+	}
+	clear_scripted_personalitites = yes
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = strict_personality
+}
+

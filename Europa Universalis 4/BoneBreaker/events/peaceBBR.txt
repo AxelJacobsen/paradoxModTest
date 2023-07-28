@@ -1,0 +1,22 @@
+namespace = my_mod_namespace
+
+country_event = {
+	id = my_mod_broken_bones.1
+	title = "event.my_mod_broken_bones.title"
+	desc = "event.my_mod_broken_bones.desc"
+	picture = GFX_evt_generic_major_event_monarch_dies
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "event.my_mod_broken_bones.option"
+        	change_adm = -6
+		change_dip = -6
+		change_mil = -6
+		add_country_modifier = {
+		modifier = hidden_broken_bones
+		duration = ruler_lifespan
+		country = ROOT	
+		}
+}

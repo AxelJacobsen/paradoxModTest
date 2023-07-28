@@ -1,0 +1,22 @@
+namespace = my_mod_namespace
+
+country_event = {
+	id = my_mod_bones_of_our_enemies.1
+	title = "event.my_mod_bones_of_our_enemies.title"
+	desc = "event.my_mod_bones_of_our_enemies.desc"
+	picture = GFX_evt_generic_major_event_monarch_dies
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "event.my_mod_bones_of_our_enemies.option"
+		change_rng = 1
+		change_random = 1
+		change_variable = {
+			variable = hidden_bones_of_enemies
+			value = yes
+			country = ROOT
+		}
+	}
+}

@@ -1,0 +1,8 @@
+﻿l_english:
+ event.my_mod_bones_of_our_enemies.title: "The Bones of Our Enemies"
+ event.my_mod_bones_of_our_enemies.desc: "We have collected the bones of our fallen enemies."
+ event.my_mod_bones_of_our_enemies.option: "Accept"
+
+ event.my_mod_broken_bones.title: "Broken Bones"
+ event.my_mod_broken_bones.desc: "Your ruler has suffered broken bones."
+ event.my_mod_broken_bones.option: "Accept"
